@@ -1,0 +1,69 @@
+<div class="sidebar-toggle-box" >
+  <i class="fa fa-bars"></i>
+</div>
+<!--logo start-->
+<a href="#" class="logo">Una<span>mad</span></a>
+<!--logo end-->
+<div class="nav notify-row" id="top_menu">
+    <!--  notification start -->
+    <ul class="nav top-menu">
+        <!-- settings start -->
+        <li class="dropdown">
+            <a class="dropdown-toggle" href="#">
+                <i class="fa fa-tasks"></i>
+                <span class="badge bg-success">6</span>
+            </a>
+        </li>
+        <!-- inbox dropdown start-->
+        <li id="header_inbox_bar" class="dropdown">
+            <a  data-toggle="collapse" data-target="#notificaciones" aria-expanded="true">
+                <i class="fa fa-envelope-o"></i>
+                <span class="badge bg-important">{{vm.newNotificaciones}}</span>
+            </a>
+            <ul class=" collapse notificaciones" id="notificaciones">
+                <li >
+                    <p class="red">Tienes {{vm.newNotificaciones}} Nuevos  Mensajes</p>
+                </li>
+                <li ng-repeat="notificacion in vm.notificaciones" class="container-fluid class caja_notifi"> 
+                    <a ui-sref ="catalogos_{{notificacion.categoria}}s_detalle({idLibro:notificacion.id_ejemplar})">
+                        <div class="col-sm-9" >
+                            <span><strong>{{notificacion.titulo}}</strong></span>
+                            <span>{{notificacion.descripcion.substring(0,300)+"..." }}</span>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="content/imagenes/{{notificacion.categoria}}/portada/{{notificacion.id_ejemplar}}_{{notificacion.id_carrera}}.jpg" width="44" >
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- notification dropdown start-->
+        <li id="header_notification_bar" class="dropdown">
+            <a class="dropdown-toggle" href="#">
+                <i class="fa fa-bell-o"></i>
+                <span class="badge bg-warning">7</span>
+            </a>
+        </li>
+        <!-- notification dropdown end -->
+    </ul>
+    <!--  notification end -->
+</div>
+<div class="top-nav ">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+
+        <!-- user login dropdown start-->
+        <li class="dropdown">
+            <a  class="dropdown-toggle" href="#">
+                
+                <span class="username">Denis Ricardo</span>
+                <b class="caret"></b>
+            </a>
+        </li>
+        <li class="sb-toggle-right">
+            <i class="fa  fa-align-right"></i>
+        </li>
+        <!-- user login dropdown end -->
+    </ul>
+    <!--search & user info end-->
+</div>

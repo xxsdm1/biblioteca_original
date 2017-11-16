@@ -1,0 +1,45 @@
+
+<div class="cuerpo11">
+	<section class="col-md-12" >
+
+		<div class="panel panel-title" >
+
+			<div class="panel-heading " style="text-shadow: 2px 2px 5px black;"  >
+	  			<h1>RESERVAS</h1>
+			</div>
+		</div>
+		
+	</section>
+
+	<section class="col-md-12">
+		<br>	
+	</section>
+	<div class="row" >
+		<div class="col-md-1" >
+			
+		</div>
+		<div class="col-md-10 " >
+			<div class="row center">
+			  <div class="col-sm-4" ng-repeat="reserva in vm.reservas">
+			    <a href="#" class="thumbnail">
+			      <img src="content/imagenes/libros/portada/{{reserva.ruta_portada}}" alt="...">
+			      	<div class="caption">
+			        	<h6>{{(reserva.titulo.substring(0,50)+"...") }}</h6>
+			        	<p><button class="btn btn-success" ui-sref="">Descartar</button></p>
+			      	</div>
+			    </a>
+			    
+			  </div>
+
+			</div>
+		</div>	
+
+		<div class="col-md-1">
+			
+		</div>	
+	</div>
+</div>
+
+
+
+

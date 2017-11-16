@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html ng-app="appBiblioteca">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+
+	<link rel="stylesheet" href="content/css/bootstrap.min.css">
+	<link rel="stylesheet" href="content/css/estilos.css">
+	<link rel="stylesheet" href="content/css/menulateral.css">
+	<link rel="stylesheet" href="content/css/font-awesome.min.css">
+</head>
+
+<body >
+
+	<div ng-include=" 'app/layout/shell.html' " ></div>
+
+
+	<!--vendor -->
+ 	<script src="scripts/jquery-2.1.4.min.js"></script>
+ 	<script src="scripts/angular.min.js"></script>
+ 	<script src="scripts/angular-sanitize.min.js"></script>	
+ 	<script src="scripts/angular-ui-router.min.js"></script>
+ 	<script src="scripts/angular-resource.min.js"></script>
+ 	<script src="scripts/bootstrap.min.js"></script>
+ 	<script src="scripts/toastr.min.js"></script>
+    <script src="scripts/push.min.js"></script>
+    
+    <!--socket.io-->
+    <script src="/socket.io/socket.io.js" ></script>
+
+
+ 	<!--Modulo principal -->
+ 	<script src="app/app.module.js"></script>
+
+    <script src="app/blocks/logger/logger.module.js"></script>
+    <script src="app/blocks/logger/logger.js"></script>
+ 	<!-- Configuracion de las rutas-->
+ 	<script src="app/blocks/router/router.module.js"></script>
+ 	<script src="app/blocks/router/routehelper.js"></script>
+
+ 	<!--Configuracion general -->
+ 	<script src="app/core/core.module.js"></script>
+ 	<script src="app/core/config.js"></script>
+
+ 	<!--Servicios -->
+ 	<script src="app/data/dataservice.module.js"></script>
+ 	<script src="app/data/librosService.js"></script>
+    <script src="app/data/revistasService.js"></script>
+    <script src="app/data/tesisService.js"></script>
+    <script src="app/data/carrerasService.js"></script>
+    <script src="app/data/profileService.js"></script>
+    <script src="app/data/reservasService.js"></script>
+    <script src="app/data/shellService.js"></script>
+    <script src="app/data/socket/socketService.js"></script>
+
+ 	<!--Directivas -->
+	<script src="app/widgets/widgets.module.js"></script>
+ 	<script src="app/widgets/widgetCarreras/rtCarrerasDirective.js"></script>
+ 	<script src="app/widgets/widgetBuscar/rtBuscarDirective.js"></script>
+ 	<script src="app/widgets/widgetEjemplar/rtEjemplarFiltro.js"></script>
+    <script src="app/widgets/widgetCalificar/rtCalificarDirective.js"></script>
+
+ 	<script src="app/layout/layout.module.js"></script>
+    <script src="app/layout/shell.js"></script>
+    <script src="app/layout/sidebar.js"></script>
+
+
+    <script src="app/profile/profile.module.js"></script>
+    <script src="app/profile/config.route.js"></script>
+    <script src="app/profile/profile.js"></script>
+
+    <script src="app/catalogos/catalogos.module.js"></script>
+
+    <script src="app/catalogos/libros/libros.module.js"></script>
+    <script src="app/catalogos/libros/config.route.js"></script>
+    <script src="app/catalogos/libros/libros.js"></script> 
+    <script src="app/catalogos/libros/detalle/detalle.module.js"></script>
+    <script src="app/catalogos/libros/detalle/config.route.js"></script>
+    <script src="app/catalogos/libros/detalle/detalle.js"></script>
+
+    <script src="app/catalogos/revistas/revistas.module.js"></script>
+    <script src="app/catalogos/revistas/config.route.js"></script>
+    <script src="app/catalogos/revistas/revistas.js"></script>
+    <script src="app/catalogos/revistas/detalle/detalle.module.js"></script>
+    <script src="app/catalogos/revistas/detalle/config.route.js"></script>
+    <script src="app/catalogos/revistas/detalle/detalle.js"></script>
+
+    <script src="app/reservas/reservas.module.js"></script>
+    <script src="app/reservas/config.route.js"></script>
+    <script src="app/reservas/reservas.js"></script>
+
+
+</body>
+</html>

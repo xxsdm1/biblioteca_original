@@ -1,0 +1,14 @@
+<div ng-controller="Shell as vm">
+	<header class="header white-bg" ng-include="'app/layout/topNav.html'" >
+	</header>
+	<div ng-controller="Sidebar as vm">
+		<aside  ng-include=" 'app/layout/sidebar.html' " >
+		</aside>
+		 <div  class="cuerpo" >
+		 	<div class="wrapper site-min-height" ui-view>
+		 	</div>
+		 </div>
+	</div>
+</div>
+
+

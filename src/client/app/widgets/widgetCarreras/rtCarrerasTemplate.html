@@ -1,0 +1,46 @@
+<div class="row affix-row">
+    <div class="sidebar-nav">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <span class="visible-xs navbar-brand">Sidebar menu</span>
+    </div>
+
+    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+      <ul class="nav navbar-nav" id="sidenav01">
+
+        <li class="active">
+          <a class="collapsed">
+          <h4>
+            Filtros
+            <br>
+          </h4>
+          </a>
+        </li>
+        <li>
+          <a>
+          <span class="glyphicon glyphicon-cloud"></span> Escuela Profesional 
+          </a>
+          <div  >
+            <ul class="nav nav-list" class="formulario">
+              <li class="radio">
+                <form action="" class="formulario">
+                  <div class="radio" ng-repeat="carrera in carreras">
+                    <input type="radio" name="carrera" id="{{carrera.id_carrera}}" ng-click="select($index)" >
+                    <label for="{{carrera.id_carrera}}">{{carrera.nombre}}</label>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>

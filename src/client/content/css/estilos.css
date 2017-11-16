@@ -1,0 +1,541 @@
+
+/* topNav html*/
+.white-bg {
+    background: #fff;
+    border-bottom: 1px solid #f1f2f7;
+}
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+}
+.header, .footer {
+    min-height: 60px;
+    padding: 0 15px;
+}
+.sidebar-toggle-box {
+    float: left;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+.sidebar-toggle-box .fa-bars {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+a.logo {
+    font-size: 21px;
+    color: #2e2e2e;
+    float: left;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+a.logo span {
+    color: #FF6C60;
+}
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.notify-row {
+    float: left;
+    margin-top: 15px;
+    margin-left: 92px;
+}
+.badge.bg-success {
+    background: #a9d86e;
+}
+.badge.bg-important {
+    background: #ff6c60;
+}
+.notify-row .badge {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 100;
+}
+#top_menu .nav > li, ul.top-menu > li {
+    float: left;
+}
+ul.top-menu > li > a {
+    color: #666666;
+    font-size: 16px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 1px solid #f0f0f8 !important;
+    padding: 2px 6px;
+    margin-right: 15px;
+}
+ul li {
+    list-style: none;
+}
+
+.top-nav {
+    margin-top: 7px;
+}
+.top-nav ul.top-menu > li {
+    margin-left: 10px;
+}
+
+.top-nav ul.top-menu > li > a {
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 6px;
+    background: none;
+    margin-right: 0;
+}
+
+.top-nav ul.top-menu > li .dropdown-menu.logout {
+    width: 268px !important;
+}
+.top-nav .dropdown-menu.extended.logout {
+    top: 50px;
+}
+.top-nav li.dropdown .dropdown-menu {
+    float: right;
+    right: 0;
+    left: auto;
+}
+
+
+.notificaciones {
+    overflow: auto;
+    padding: 0px;
+    background-color: white;
+    max-width: 500px;
+    min-width: 400px;
+    max-height: 500px;
+    position: absolute;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.1) !important;
+}
+.notificaciones p{
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+
+}
+.caja_notifi {
+    margin : 3px 3px 3px 3px;
+    background-color: #efefef;
+}
+.caja_notifi img{ width: 50px; }
+.caja_notifi span{ word-wrap:break-word; display: block; color: black;}
+
+
+
+/*---------*/
+
+
+
+/*Sidebar */
+#sidebar {
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    background: #32323a;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#sidebar ul li {
+    position: relative;
+}
+ul.sidebar-menu li {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+ul.sidebar-menu {
+    padding-top: 80px;
+}
+ul.sidebar-menu, ul.sidebar-menu li ul.sub {
+    margin: -2px 0 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+.nopadding {
+    padding: 0px;
+}
+ul.sidebar-menu li a {
+    color: #aeb2b7;
+    text-decoration: none;
+    display: block;
+    padding: 18px 0 18px 25px;
+    font-size: 12px;
+    outline: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;}
+
+.dcjq-icon {
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    background: url(../images/nav-expand.png) no-repeat top;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    position: absolute;
+    right: 10px;
+}
+ul.sidebar-menu {
+    padding-top: 80px;
+}
+.leftside-navigation, .right-stat-bar {
+    height: 100%;
+}
+.leftside-navigation{
+    overflow: hidden;
+    outline: none;
+}
+
+ul.sub {
+    margin: -2px 0 0;
+    padding: 0;
+}
+
+ul.sidebar-menu li ul.sub li {
+    background: #28282e;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+ul.sidebar-menu ul.sub li {
+    border-bottom: none;
+}
+.sub li a {
+    margin-left: 20px;
+    padding-left: 46px;
+}
+/* ---------------*/
+
+.cuerpo{
+
+    margin-left: 240px;
+    background: #f1f2f7;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+}
+
+
+.site-min-height {
+    min-height: 800px;
+}
+.wrapper {
+    display: inline-block;
+    margin-top: 80px;
+    padding: 15px;
+    width: 100%;
+}
+
+
+/* Libross*/
+.buscar{
+	height: 41px;
+}
+.buscar div {
+	padding: 0;
+	height: 100%;
+}
+.buscar input{
+	border: none;
+	border-radius: 2px 0 0 2px;
+	height: 100%;
+}
+.buscar button{
+    background-color: #007fad;
+    border: 1px solid #007fad;
+    border-bottom: 1px solid #005f81;
+    height: 100%;
+    width: 100%;
+}
+.filtros{
+	margin-top: 10px;
+	height: 41px;
+}
+.filtros div{
+	height: 100%;
+}
+.filtros i{
+	font-size: 20px;
+}	
+.filtros button{
+	height: 100%;
+	width: 100%;
+    position: relative;
+    text-align: left;
+    background-color: #fff;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.25;
+    z-index: 0;
+}
+
+.current{
+    background: #28282e;
+    color: #1FB5AD;
+    display: block;
+}
+.current span{color: #1FB5AD;}
+
+/* detalle */
+.detalle> h1 {
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 3.6em;
+    font-weight: bold;
+    color: #3E3D40;
+}
+
+.panel{
+    border-radius: 0px;
+}
+.detalle_img img{
+    width: 100%;
+    height: 428px;
+}
+.detalle_reserva div{
+    margin-top: 10px;
+    border-top: 1px dashed; 
+}
+.detalle_reserva a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f08804;
+    border: none;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px;
+    height: 50px;
+    margin: 0px;
+     margin-top: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.detalle_resena span{
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 12px;
+    color: rgb(74, 74, 74);
+
+}
+.detalle_resena a{
+    float: right;
+    color: rgb(74, 74, 74);
+    font-size: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+.paddding_right{
+    padding-right: 0px;
+}
+.resena {display: flex;flex-wrap: wrap;}
+.resena_caja{
+    padding: 15px 10px;
+    border-radius: 4px;
+    border: 1px solid rgb(220, 220, 220);
+    display: flex;
+    min-width: 240px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+    width: 24%;
+}
+.comentario{
+    width: 95%;
+    margin-bottom: 20px;
+}
+.comentatio_caja{
+    width: 100%; 
+    margin-bottom: 17px;
+     padding: 10px;
+}
+.comentario_autor{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+}
+.comentario_autor a{
+    cursor: pointer;
+}
+.comentario_autor img{
+    width: 35px; 
+    height: 35px; 
+    border-radius: 100px;
+}
+.autor p{
+    font-family: &quot;Nunito Sans&quot;; 
+    font-size: 14px; 
+    font-weight: bold; 
+    color: rgb(54, 215, 220); 
+    margin-bottom: 0px; 
+    margin-left: 8px; 
+    margin-right: 8px;
+}
+.comentario_fecha {
+    font-family: &quot;Nunito Sans&quot;; 
+    font-size: 12px; 
+    color: rgb(155, 155, 155); 
+    margin: 0px 0px 0px auto;
+}
+.comentario_texto{
+    width: 90%;
+}
+.comentario_texto p{margin-left: 42px;}
+.comentario_texto span{
+    font-family: &quot;Nunito Sans&quot;; 
+    font-size: 14px; 
+    color: rgb(74, 74, 74); 
+    line-height: 23px; 
+    word-break: break-word;
+}
+.estadistica_libro{
+    width: 100%; 
+    background-color: rgb(255, 255, 255); 
+    box-shadow: rgba(187, 183, 183, 0.5) 0px 1px 2px; 
+    border-radius: 4px; 
+    padding-top: 10px;
+}
+.estadistica_emoji{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    padding: 10px;
+}
+.estadistica_emoji img{
+    width: 20px; 
+    height: 20px; 
+    margin-left: 8px;
+}
+.estadistica_emoji div{
+    height: 22px; 
+    font-family: &quot;Nunito Sans&quot; 
+    font-size: 16px; 
+    padding-left: 5px;
+    margin: 0px; 
+    color: rgb(74, 74, 74);
+}
+.estadistica_emoji p{
+    height: 22px; 
+    font-family: &quot;Nunito Sans&quot; 
+    font-weight: bold; 
+    font-size: 16px; 
+    padding-left: 8px; 
+    margin: 0px; 
+    color: rgb(74, 74, 74);
+}
+.comentar{
+    margin: auto;
+    border: 1px solid rgb(204, 204, 204); 
+    overflow: auto; 
+    border-radius: 8px; 
+    outline: none; 
+    padding: 24px; 
+    max-width: 450px; 
+    max-height: 600px; 
+    width: 100%; 
+}
+.comentar_body{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    align-items: center;
+}
+.comentar_body div{ margin-bottom:  15px; }
+.comentar_body p{
+    font-family: &quot;Nunito Sans&quot;
+    font-size: 16px; 
+    font-weight: bold; 
+    margin-bottom: 0px; 
+    color: rgb(36, 33, 53);
+}
+.comentar_body a{
+    cursor: pointer;
+    width: 155px; 
+    height: 50px; 
+    border-radius: 4px; 
+    background-color: rgb(245, 50, 113);
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center; 
+    font-family: &quot;Nunito Sans&quot;
+    font-size: 16px; 
+    font-weight: bold; 
+    margin-left: 30px; 
+    margin-right: 20px; 
+    color: #dff0d8;
+}
+.comentar_body textarea{
+    width: 90%; 
+    border-style: solid; 
+    border-width: 1px; 
+    height: 100px; 
+    border-radius: 4px; 
+    font-family: &quot;Nunito Sans&quot;; 
+    font-size: 16px; 
+    padding: 20px; color: 
+    rgb(36, 33, 53);
+}
+.comentar_emoji{
+    display: flex; 
+    margin-bottom: 10px;
+}
+.comentar_emoji img{
+    width: 35px; 
+    height: 35px; 
+    margin-right: 10px; 
+    cursor: pointer; 
+    opacity: 0.5;
+}
+.activate_emoji img{
+    opacity: 100;
+}
+/* -------------*/
+
+/*rtCalificar */
+.estrella span{
+    cursor: pointer; 
+    display: inline-block; 
+    position: relative;
+}
+.estrella i{
+    margin-right: 4px; 
+    margin-left: 4px; 
+    color: rgb(54, 215, 220); 
+    font-size: 30px;
+}
+.estrella_activate{
+    
+}
+
+/* Reserva modalll*/
+.reserva_modal {
+    height: 80px;
+    text-align: center;
+}
+
+.reserva_modal img{
+    height: 60px;
+}

@@ -1,0 +1,22 @@
+<div  id="sidebar" class="nav-collapse" >
+    <!-- sidebar menu start-->
+    <div class="leftside-navigation" >
+        <ul class="sidebar-menu" id="nav-accordion">
+            <li ng-class="vm.isCurrent(r)" ng-repeat="r in vm.navRoutes" >
+                <a ng-if="!r.children" ui-sref="{{r.name}}" data-toggle="collapse" data-target="#{{r.settings.nav}}">
+                    <span>{{r.settings.content}}</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <a ng-if="r.children" data-toggle="collapse" data-target="#{{r.settings.nav}}">
+                    <span>{{r.settings.content}}</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul ng-if="r.children" class=" collapse sub" id="{{r.settings.nav}}">
+                    <li ng-repeat="d in r.children" ng-class="vm.isCurrent(d)">
+                        <a ui-sref="{{d.name}}"><span>{{d.settings.content}}</span></a>
+                    </li>>
+                </ul>
+            </li>
+        </ul>            
+    </div>
+</div>
